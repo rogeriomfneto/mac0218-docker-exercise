@@ -1,0 +1,4 @@
+docker build -t my-caddy .
+docker run --name my-caddy-container \
+    -v ${PWD}/pages:/usr/src/pages/ \
+    -dp 3000:80 my-caddy
